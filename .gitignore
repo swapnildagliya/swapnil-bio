@@ -1,0 +1,8 @@
+# Build scripts + dev-only files — keep the public deploy repo clean.
+# (Sync still copies these into the repo working dir, but git won't commit them.)
+_build/
+spec.md
+audit-*.md
+quality-audit-*.md
+events-context.md
+mockups/
