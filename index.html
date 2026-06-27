@@ -160,13 +160,6 @@
 
   .empty{text-align:center;padding:48px 0;font-family:var(--pf);font-style:italic;font-size:18px;color:var(--charcoal)}
 
-  /* ===== NEWSLETTER (R7) — link-out to abcbollywoodbelgium.com/newsletter ===== */
-  .newsletter{margin-top:30px;padding:22px 20px;border:1px solid var(--hairline);background:var(--card);display:flex;flex-direction:column;gap:11px;animation:fade-up 700ms 220ms var(--ease) both}
-  .newsletter__title{font-family:var(--pf);font-weight:500;font-size:21px;line-height:1.12;letter-spacing:-.01em;color:var(--ink)}
-  .newsletter__body{font-family:var(--inter);font-size:13.5px;line-height:1.5;color:var(--charcoal)}
-  .newsletter__cta{align-self:flex-start;display:inline-flex;align-items:center;justify-content:center;min-height:46px;margin-top:4px;padding:0 24px;border:1.5px solid var(--vibrant);color:var(--vibrant);background:transparent;font-family:var(--inter);font-weight:600;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;transition:background var(--t-base) var(--ease),color var(--t-base) var(--ease)}
-  .newsletter__cta:hover{background:var(--vibrant);color:#fff}
-  .newsletter__cta:focus-visible{outline:2px solid var(--vibrant);outline-offset:2px}
 
   /* ===== SHARE (button + QR modal + toast) ===== */
   .topbar-right{display:flex;align-items:center;gap:12px;flex:0 0 auto}
@@ -244,11 +237,6 @@
   <div class="deal-rule" aria-hidden="true"></div>
   <ul class="deal stagger" id="event-list" aria-label="Upcoming events"></ul>
 
-  <section class="newsletter" aria-label="Newsletter">
-    <div class="newsletter__title" id="nl-title">Get Swapnil's updates</div>
-    <div class="newsletter__body" id="nl-body">New shows, workshops and DJ sets — straight to your inbox.</div>
-    <a class="newsletter__cta" id="nl-cta" href="https://www.abcbollywoodbelgium.com/newsletter" target="_blank" rel="noopener">Subscribe</a>
-  </section>
 
   <p class="footnote" id="footnote"></p>
 </main>
@@ -652,9 +640,6 @@ const EVENTS = [
       pinned: 'Pinned', pinnedWeek: 'Pinned · this week', livePinned: 'Live · pinned',
       empty: 'New events coming soon.',
       footnote: 'Full studio calendar →',
-      nlTitle: "Get Swapnil's updates",
-      nlBody: 'New shows, workshops and DJ sets — straight to your inbox.',
-      nlCta: 'Subscribe',
       dmAria: (t) => `${t} — message us on Instagram for details`,
       badge: { FREE:'FREE', RSVP:'RSVP', TICKET:'TICKET', DM:'DM', INFO:'INFO' },
       cta: { 'Free · just show up':'Free · just show up', 'Reserve a spot':'Reserve a spot', 'Buy a ticket':'Buy a ticket', 'DM for info':'DM for info' },
@@ -890,9 +875,6 @@ const EVENTS = [
   function applyStatic(){
     const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
     set('role-label', tr().role);
-    set('nl-title', tr().nlTitle);
-    set('nl-body', tr().nlBody);
-    set('nl-cta', tr().nlCta);
   }
 
   applyStatic();
