@@ -361,6 +361,11 @@ const GROUPS = {
     dateLabel: 'Thu 23 + Sun 26 Jul',
     eyebrow: '3 workshops · Baudelopark · Het Bal',
   },
+  'benenwerk': {
+    label: 'Free initiations · Shiva Stage',
+    dateLabel: 'Sat 8 Aug · Brugge',
+    eyebrow: '2 initiations · Provinciaal Hof',
+  },
 };
 
 const EVENTS = [
@@ -377,13 +382,14 @@ const EVENTS = [
   // 13 workshop card(s) auto-generated from projects/shoonya/workshop/workshops.json — DO NOT hand-edit between the markers.
   {
     id:'benenwerk', audience:'swapnil',
-    title:'Benenwerk', eyebrow:'8 Aug · Free',
+    pinnedFor:['swapnil'],
+    title:'Benenwerk · Shiva Stage', eyebrow:'Sat 8 Aug · Free',
     date:'2026-08-08',
-    dateLabel:'Indian dance day · Bhangra + Bollywood workshops + ABC/Shoonya performances + DJ set',
-    location:'Provinciaal Hof · de Markt · Brugge',
+    dateLabel:'DJ set 20:00 → 01:00 · live ABC + Shoonya',
+    location:'Provinciaal Hof · Markt, Brugge',
     style:'bollywood',
     image:'images/benenwerk-indian-dance.jpg',
-    url:'https://cactusmusic.be/EN/Concerts/Calendar/bc-benenwerk',
+    url:'https://bruggecentraal.be/benenwerkpodia/shiva-stage/',
     cta:'Free · just show up',
   },
   {
@@ -539,6 +545,25 @@ const EVENTS = [
     cta:'Free · just show up',
   },
   /* GF-AUTO:END */
+  // ─── Benenwerk · Shiva Stage sub-rows (hand-authored, page-specific).
+  // Times are the OFFICIAL published grid — bruggecentraal.be/benenwerkpodia/shiva-stage
+  // + the printed Brugge Centraal 2026 folder (p.26). Do not change without re-checking both.
+  {
+    id:'benenwerk-bollywood', audience:'swapnil', group:'benenwerk',
+    title:'Bollywood initiation', eyebrow:'Sat 8 Aug · 19:00 – 20:00',
+    date:'2026-08-08', dateLabel:'No experience needed · with Swapnil',
+    style:'bollywood',
+    url:'https://bruggecentraal.be/benenwerkpodia/shiva-stage/',
+    cta:'Free · just show up',
+  },
+  {
+    id:'benenwerk-bhangra', audience:'swapnil', group:'benenwerk',
+    title:'Bhangra initiation', eyebrow:'Sat 8 Aug · 21:30 – 22:15',
+    date:'2026-08-08', dateLabel:'No experience needed · with Swapnil',
+    style:'bhangra',
+    url:'https://bruggecentraal.be/benenwerkpodia/shiva-stage/',
+    cta:'Free · just show up',
+  },
   {
     id:'dokfeesten', audience:'both',
     title:'Dokfeesten - Indian dance', eyebrow:'29 Aug · 19:20 · Gent',
