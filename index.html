@@ -55,12 +55,15 @@
 <link rel="stylesheet" href="styles/mobile-hub.css">
 <style>
   :root{
-    /* Swapnil brand saffron. The system [data-brand="swapnil"]
+    /* @swapkebolly is act-coded (D-096). This page is the Live/Hello
+       act, so its colour is cobalt. The system [data-brand="swapnil"]
        themer also sets --vibrant via colors_and_type.css; this :root
        override keeps the inline CSS consistent for places not using the
-       brand themer. */
-    --vibrant:#E85D1F;
-    --vibrant-soft:rgba(232,93,31,.16);
+       brand themer. Hex lines are fallbacks for pre-oklch browsers only
+       — oklch is the canonical value (D-081). */
+    --vibrant:#2154D8;
+    --vibrant:oklch(0.50 0.21 264);
+    --vibrant-soft:rgba(33,84,216,.16);
     --ink:#1A1917;
     --night:#0c0902;
     --charcoal:#4A4A4A;
@@ -378,6 +381,16 @@ const EVENTS = [
     url:'https://www.shoonyadance.com/calendar/opendeurdag-gratis-dansen-gent-13-september',
     cta:'Free · just show up',
   },
+  {
+    id:'free-trial', audience:'both',
+    title:'Free trial week', eyebrow:'14 – 19 Sep',
+    date:'2026-09-14', endDate:'2026-09-19',
+    dateLabel:'Drop into any class',
+    location:'',
+    image:'images/free-trial-week.jpg',
+    url:'https://www.shoonyadance.com/try-a-class',
+    cta:'Free · just show up',
+  },
   /* WORKSHOPS-AUTO:START */
   // 12 workshop card(s) auto-generated from projects/shoonya/workshop/workshops.json — DO NOT hand-edit between the markers.
   {
@@ -566,12 +579,25 @@ const EVENTS = [
     cta:'Free · just show up',
   },
   {
+    id:'bollywood-vibes-toulouse', audience:'swapnil',
+    title:'Bollywood Vibes Festival', eyebrow:'2 - 4 Oct \u00b7 Toulouse',
+    date:'2026-10-02', endDate:'2026-10-04',
+    dateLabel:'Fri 2 Oct show \u00b7 Lavani Sat 14:30 \u00b7 Garba Sun 11:15',
+    location:'',   // organiser (Les Perles de Jaffna + Abinayam) omitted: the 2-line meta clamp was truncating the class timings
+    style:'folk',
+    image:'images/styles/folk-1.jpg',
+    // HelloAsso booking. Tracking params (utm_*, fbclid) stripped from the shared link.
+    url:'https://www.helloasso.com/associations/les-perles-de-jaffna/evenements/festival-bollywood-vibes',
+    cta:'Reserve on HelloAsso',
+  },
+  {
     id:'sangam', audience:'both',
     title:'Sangam', eyebrow:'7 – 8 Nov · Gent',
     date:'2026-11-07', endDate:'2026-11-08',
     dateLabel:'ABC stage production', location:'',
     style:'bollywood',
     image:'images/sangam-performance-swapnil.jpg',
+    url:'https://links.shoonyadance.com/go/ticket',
     cta:'Buy a ticket',
   },
   {
