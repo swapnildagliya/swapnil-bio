@@ -824,7 +824,7 @@ const EVENTS = [
             <div class="link-row__body">
               <div class="link-row__eyebrow">${badgeHTML}${liveDot}${escapeHTML(e.eyebrow)}</div>
               <div class="link-row__title">${escapeHTML(e.title)}</div>
-              <div class="link-row__meta">${escapeHTML([e.dateLabel, e.location].filter(Boolean).join(' · '))}</div>
+              <div class="link-row__meta"><span>${escapeHTML([e.dateLabel, e.location].filter(Boolean).join(' · '))}</span></div>
             </div>
             <div class="link-row__chev" aria-hidden="true">→</div>
           </a>`;
