@@ -215,6 +215,8 @@
     .stack{height:360px}
     .stack .card{height:340px}
   }
+  /* Keep every personal taster class visible on narrow screens. */
+  .link-row__meta--classes > span:not(.link-row__meta-arrow){display:block;-webkit-line-clamp:unset;overflow:visible;line-height:1.5}
 </style>
 </head>
 <body data-brand="swapnil">
@@ -415,8 +417,9 @@ const EVENTS = [
   },
   {
     id:'opendeurdag-sep', audience:'both',
-    title:'Opendeurdag · Season opener', eyebrow:'13 Sep · Free',
-    date:'2026-09-13', dateLabel:'19 free taster classes',
+    title:'Opendeurdag · My classes', eyebrow:'13 Sep · Free · With Swapnil',
+    date:'2026-09-13', dateLabel:'11:00 Yoga · 12:00 Indian Dance Technique · 15:00 Bollyfolk',
+    classTimes:['11:00 · Yoga', '12:00 · Indian Dance Technique', '15:00 · Bollyfolk'],
     location:'',
     image:'images/shoonya-opendeurdag-2022-001.jpg',
     url:'https://www.shoonyadance.com/calendar/opendeurdag-gratis-dansen-gent-13-september',
@@ -898,7 +901,7 @@ const EVENTS = [
             <div class="link-row__body">
               <div class="link-row__eyebrow">${badgeHTML}${liveDot}${escapeHTML(e.eyebrow)}</div>
               <div class="link-row__title">${escapeHTML(e.title)}</div>
-              <div class="link-row__meta"><span>${escapeHTML([e.dateLabel, e.location].filter(Boolean).join(' · '))}</span></div>
+              <div class="link-row__meta${e.classTimes ? ' link-row__meta--classes' : ''}"><span>${e.classTimes ? e.classTimes.map(escapeHTML).join('<br>') : escapeHTML([e.dateLabel, e.location].filter(Boolean).join(' · '))}</span></div>
             </div>
             <div class="link-row__chev" aria-hidden="true">→</div>
           </a>`;
