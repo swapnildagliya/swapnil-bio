@@ -379,6 +379,7 @@ const GROUPS = {
   },
 };
 
+/* city / siteUrl / site:false are read only by swapnil.dance's dates board (events.js, exported at bio deploy). No city = not shown there. */
 const EVENTS = [
   /* Hand-added 2026-09-05 — Indian Dance Winter Intensive 2027 (/event-launch).
      OUTSIDE every *-AUTO:START/END block on purpose; do not move it inside one.
@@ -388,7 +389,7 @@ const EVENTS = [
      WARNING: url is live only once the workshops page is deployed. Do not sync this bio
      before that page returns 200, or the card points at a 404. */
   {
-    id:'indian-dance-winter-intensive-2027', audience:'both',
+    id:'indian-dance-winter-intensive-2027', city:'Ghent', audience:'both',
     title:'Indian Dance Winter Intensive 2027',
     eyebrow:'3 days \u00b7 5 forms \u00b7 with Swapnil Dagliya',
     date:'2027-01-22', endDate:'2027-01-24',
@@ -419,7 +420,7 @@ const EVENTS = [
     cta:'See the schedule',
   },
   {
-    id:'opendeurdag-sep', audience:'both',
+    id:'opendeurdag-sep', city:'Ghent', audience:'both',
     title:'Opendeurdag · My classes', eyebrow:'13 Sep · Free · With Swapnil',
     date:'2026-09-13', dateLabel:'11:00 Yoga · 12:00 Indian Dance Technique · 15:00 Bollyfolk',
     classTimes:['11:00 · Yoga', '12:00 · Indian Dance Technique', '15:00 · Bollyfolk'],
@@ -429,7 +430,7 @@ const EVENTS = [
     cta:'Free · just show up',
   },
   {
-    id:'free-trial', audience:'both',
+    id:'free-trial', city:'Ghent', audience:'both',
     title:'Free trial week', eyebrow:'14 – 19 Sep',
     date:'2026-09-14', endDate:'2026-09-19',
     dateLabel:'Drop into any class',
@@ -645,7 +646,7 @@ const EVENTS = [
     cta:'Reserve a spot',
   },
   {
-    id:'bollywood-vibes-toulouse', audience:'swapnil',
+    id:'bollywood-vibes-toulouse', city:'Toulouse', audience:'swapnil',
     title:'Bollywood Vibes Festival', eyebrow:'2 - 4 Oct \u00b7 Toulouse',
     date:'2026-10-02', endDate:'2026-10-04',
     dateLabel:'Fri 2 Oct show \u00b7 Lavani Sat 14:30 \u00b7 Garba Sun 11:15',
@@ -657,7 +658,7 @@ const EVENTS = [
     cta:'Reserve on HelloAsso',
   },
   {
-    id:'happy-inde-nice', audience:'swapnil',
+    id:'happy-inde-nice', city:'Nice', audience:'swapnil',
     title:'Happy Inde Festival', eyebrow:'10 Oct \u00b7 Nice',
     date:'2026-10-10',
     dateLabel:'Ghoomar workshop 14:00 \u00b7 Closing show 19:00',
@@ -670,7 +671,7 @@ const EVENTS = [
   },
   {
     // SANGAM, one row per show (Swapnil 2026-09-28): Saturday — times from events/performance/2026-11-07-sangam.json performances[]
-    boost:true, id:'sangam-sat', audience:'both',
+    boost:true, id:'sangam-sat', city:'Ghent', siteUrl:'https://performances.shoonyadance.com/sangam/', audience:'both',
     title:'Sangam', eyebrow:'Sat 7 Nov · 19:30 · Gent',
     date:'2026-11-07',
     startTime:'19:30', endTime:'21:00',
@@ -682,7 +683,7 @@ const EVENTS = [
   },
   {
     // Sunday — times from events/performance/2026-11-07-sangam.json performances[]
-    boost:true, id:'sangam-sun', audience:'both',
+    boost:true, id:'sangam-sun', city:'Ghent', siteUrl:'https://performances.shoonyadance.com/sangam/', audience:'both',
     title:'Sangam', eyebrow:'Sun 8 Nov · 15:00 · Gent',
     date:'2026-11-08',
     startTime:'15:00', endTime:'16:30',
@@ -693,7 +694,7 @@ const EVENTS = [
     cta:'Buy a ticket',
   },
   {
-    id:'gidf-2027', audience:'both',
+    id:'gidf-2027', city:'Ghent', audience:'both',
     title:'Gent India Dans Festival', eyebrow:'7 – 9 May 2027 · Edition Five',
     date:'2027-05-07', endDate:'2027-05-09',
     dateLabel:'Shoonya Dance Centre, Gent', location:'',
