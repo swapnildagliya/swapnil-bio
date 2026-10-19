@@ -1,26 +1,6 @@
 /* GENERATED from index.html by scripts/export-bio-events.mjs at bio deploy — do not edit.
    Read by swapnil.dance (dates board). Edit events in index.html only. */
 window.EVENTS = [
-  /* Hand-added 2026-09-05 — Indian Dance Winter Intensive 2027 (/event-launch).
-     OUTSIDE every *-AUTO:START/END block on purpose; do not move it inside one.
-     No startTime/endTime on purpose (D-108): the event runs Fri 18:30 -> Sun 16:00 across
-     three days, so a single clock pair would put a nonsense time on the Studio-TV board.
-     It shows as a date range instead, which is correct.
-     WARNING: url is live only once the workshops page is deployed. Do not sync this bio
-     before that page returns 200, or the card points at a 404. */
-  {
-    id:'indian-dance-winter-intensive-2027', city:'Ghent', audience:'both',
-    title:'Indian Dance Winter Intensive 2027',
-    eyebrow:'3 days \u00b7 5 forms \u00b7 with Swapnil Dagliya',
-    date:'2027-01-22', endDate:'2027-01-24',
-    dateLabel:'Fri 22 \u2013 Sun 24 Jan 2027',
-    subtitle:'Bhangra & Jhoomar, Semi-Classical, Group Choreography, Garba & Dandiya Raas, Khoriya.',
-    location:'Shoonya \u00b7 41 Stapelplein, Gent',
-    price:'from \u20ac35',
-    image:'images/winter-intensive-2027.jpg',
-    url:'https://workshops.shoonyadance.com/indian-dance-winter-intensive-2027/',
-    cta:'Reserve a spot',
-  },
   /* Hand-added 2026-09-09 — his weekly classes. OUTSIDE every *-AUTO:START/END block on purpose.
      Swapnil asked for this: the bio carried Opendeurdag and the trial week but nothing pointing at
      the weekly schedule, so every "schedule → link in bio" CTA was dead.
@@ -60,7 +40,7 @@ window.EVENTS = [
     cta:'Free · just show up',
   },
   /* WORKSHOPS-AUTO:START */
-  // 10 workshop card(s) auto-generated from projects/shoonya/workshop/workshops.json — DO NOT hand-edit between the markers.
+  // 12 workshop card(s) auto-generated from projects/shoonya/workshop/workshops.json — DO NOT hand-edit between the markers.
   {
     id:'benenwerk', audience:'swapnil',
     pinnedFor:['swapnil'],
@@ -113,10 +93,10 @@ window.EVENTS = [
   },
   {
     id:'kizomba-beginner-bootcamp', audience:'shoonya',
-    title:'Kizomba Beginner Bootcamp', eyebrow:'From 17 Oct · beginners · from €55',
-    subtitle:'Three Saturdays for absolute beginners and dancers who want a clean Kizomba foundation.',
-    date:'2026-10-17', endDate:'2027-01-23',
-    dateLabel:'3 Saturdays 11:00–14:00 · with Sonja KikiZomba',
+    title:'Kizomba Beginner Bootcamp', eyebrow:'7 Nov + 23 Jan · beginners · from €55',
+    subtitle:'Two Saturdays left for beginners who want a clean Kizomba foundation.',
+    date:'2026-11-07', endDate:'2027-01-23',
+    dateLabel:'2 Saturdays 11:00–14:00 · with Sonja KikiZomba',
     image:'images/sonja-kikizomba.jpg',
     images:['images/sonja-kikizomba.jpg', 'images/kizomba-roma-bw.jpg', 'images/kizomba-treat.jpg'],
     price:'from €55',
@@ -126,10 +106,10 @@ window.EVENTS = [
   },
   {
     id:'kizomba-universe', audience:'shoonya',
-    title:'Exploring the Kizomba Universe', eyebrow:'From 17 Oct · from €55',
-    subtitle:'Three modules: Konpa & Zouk, Tarraxinha, and Semba next level.',
-    date:'2026-10-17', endDate:'2027-01-23',
-    dateLabel:'3 Saturdays 15:00–18:00 · with Sonja KikiZomba',
+    title:'Exploring the Kizomba Universe', eyebrow:'7 Nov + 23 Jan · from €55',
+    subtitle:'Two modules: Tarraxinha and Semba next level.',
+    date:'2026-11-07', endDate:'2027-01-23',
+    dateLabel:'2 Saturdays 15:00–18:00 · with Sonja KikiZomba',
     image:'images/kizomba-sawa-floor.jpg',
     images:['images/kizomba-sawa-floor.jpg', 'images/kizomba-egypt.jpg', 'images/kizomba-roma-bw.jpg'],
     price:'from €55',
@@ -149,15 +129,15 @@ window.EVENTS = [
     cta:'Reserve a spot',
   },
   {
-    id:'bachata-solo-miniseries', audience:'shoonya',
-    title:'Bachata Solo Style · Miniseries', eyebrow:'8 Oct – 17 Dec · no partner · €124',
-    subtitle:'No partner needed, beginners welcome.',
-    date:'2026-10-08', endDate:'2026-12-17',
-    dateLabel:'Thursdays 19:00 · with Ioanna',
-    image:'images/latin-close-frame.jpg',
-    images:['images/latin-close-frame.jpg', 'images/latin-open-line.jpg', 'images/latin-bachata-red-turn.jpg'],
-    price:'€124',
-    url:'https://www.shoonyadance.com/bachata-solo-style-gent',
+    id:'flamenco-technique', audience:'shoonya',
+    title:'Flamenco Technique', eyebrow:'From 21 Nov · €28',
+    subtitle:'This monthly intensive workshop serves as a deep complement to your regular classes.',
+    date:'2026-11-21', endDate:'2027-01-16',
+    dateLabel:'3 Saturdays 10:00–12:00 · with La Liz',
+    image:'images/flamenco-technique.jpg',
+    price:'€28',
+    boost:true,
+    url:'https://workshops.shoonyadance.com/flamenco-technique/',
     cta:'Reserve a spot',
   },
   {
@@ -182,6 +162,29 @@ window.EVENTS = [
     boost:true,
     highlight:true,
     url:'https://workshops.shoonyadance.com/round-trip-to-cuba/',
+    cta:'Reserve a spot',
+  },
+  {
+    id:'sevillanas-refresh', audience:'shoonya',
+    title:'Sevillanas Refresh', eyebrow:'20 – 21 Feb 2027 · from €30',
+    subtitle:'A two-day refresher for dancers who have learned Sevillanas before.',
+    date:'2027-02-20', endDate:'2027-02-21',
+    dateLabel:'2 mornings 10:00–12:00 · with La Liz',
+    image:'images/shoonya-flamenco-001.jpg',
+    price:'from €30',
+    url:'https://workshops.shoonyadance.com/sevillanas-refresh/',
+    cta:'Reserve a spot',
+  },
+  {
+    id:'indian-dance-winter-intensive-2027', audience:'both',
+    title:'Indian Dance Winter Intensive 2027', eyebrow:'with Swapnil Dagliya',
+    subtitle:'Bhangra & Jhoomar, Semi-Classical, Group Choreography, Garba & Dandiya Raas, Khoriya.',
+    date:'2027-01-22', endDate:'2027-01-24',
+    dateLabel:'Fri 22 – Sun 24 Jan 2027',
+    location:'Shoonya · 41 Stapelplein, Gent',
+    image:'images/winter-intensive-2027.jpg',
+    price:'from €35',
+    url:'https://workshops.shoonyadance.com/indian-dance-winter-intensive-2027/',
     cta:'Reserve a spot',
   },
   /* WORKSHOPS-AUTO:END */
