@@ -190,12 +190,13 @@ window.EVENTS = [
   /* WORKSHOPS-AUTO:END */
   {
     id:'france-retreat', audience:'both',
-    title:'Dance & Yoga Summer Retreat', eyebrow:'4 – 10 Jul · South of France',
-    date:'2026-07-04', endDate:'2026-07-10',
-    dateLabel:'7 days · all-inclusive', location:'',
-    image:'images/zomerstage-couple-dance.jpg',
-    url:'https://www.shoonyadance.com/zomerstage',
-    cta:'Registration required',
+    title:'Zomerstage 2027', eyebrow:'3 – 9 Jul · South of France',
+    subtitle:'Six nights and five full class days, with your stay, meals and classes included.',
+    date:'2027-07-03', endDate:'2027-07-09',
+    dateLabel:'6 nights · stay, meals & classes', location:'',
+    image:'images/zomerstage-2027.jpg',
+    url:'https://zomerstage.shoonyadance.com/',
+    cta:'Request your place',
   },
   /* GF-AUTO:START */
   {
